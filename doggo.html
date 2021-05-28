@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggo Picture Generator</title>
+    <style>
+        main {
+            margin: 0 auto;
+            width: 50%;
+            border: 2px solid black;
+            box-shadow: 0 8px 6px -6px black;
+            padding: 50px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        button {
+    
+            background: linear-gradient(-45deg, #09E2F8, #2C43EA, #E42CEA, #6D04B6);
+            background-size: 400% 400%;
+	        animation: gradient 12s ease infinite;
+            color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+        }
+
+        @keyframes gradient {
+	    0% {
+		    background-position: 0% 50%;
+	    }
+	    50% {
+		    background-position: 100% 50%;
+	    }
+	    100% {
+		    background-position: 0% 50%;
+	    }
+        }
+
+        h1 {
+            color: #E42CEA;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1 class="flex">Generate a Random Dog Picture!</h1>
+        <img id ="doggoImgElement" class="center">
+
+        <button type = "button" id="getDoggo" class="center">Show Me a Doggo!</button>
+    </main>
+    <script src="js/doggo.js"></script>
+</body>
+</html>
